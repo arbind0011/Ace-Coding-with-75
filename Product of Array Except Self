@@ -7,12 +7,12 @@ class Solution {
 
         for(int i=n-1; i>=0; i--){
             ans[i] = ProdL;
-            ProdL = ProdL * nums[i]; 
+            ProdL *= nums[i]; 
         }
 
         for(int j=0; j<n; j++){
             ans[j] *= ProdR;
-            ProdR = ProdR * nums[j]; 
+            ProdR *= nums[j]; 
         }
         return ans;        
     }
